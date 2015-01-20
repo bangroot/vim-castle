@@ -1,0 +1,66 @@
+[submodule "home/.vim/bundle/obsession"]
+	path = home/.vim/bundle/obsession
+	url = https://github.com/tpope/vim-obsession.git
+[submodule "home/.vim/bundle/airline"]
+	path = home/.vim/bundle/airline
+	url = https://github.com/bling/vim-airline
+[submodule "home/.vim/bundle/dispatch"]
+	path = home/.vim/bundle/dispatch
+	url = https://github.com/tpope/vim-dispatch
+[submodule "home/.vim/bundle/nerdtree-tabs"]
+	path = home/.vim/bundle/nerdtree-tabs
+	url = https://github.com/jistr/vim-nerdtree-tabs
+[submodule "home/.vim/bundle/ag"]
+	path = home/.vim/bundle/ag
+	url = https://github.com/rking/ag.vim
+[submodule "home/.vim/bundle/taglist"]
+	path = home/.vim/bundle/taglist
+	url = https://github.com/vim-scripts/taglist.vim
+[submodule "home/.vim/bundle/repeat"]
+	path = home/.vim/bundle/repeat
+	url = https://github.com/tpope/vim-repeat.git
+[submodule "home/.vim/bundle/unimpaired"]
+	path = home/.vim/bundle/unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
+[submodule "home/.vim/bundle/yankring"]
+	path = home/.vim/bundle/yankring
+	url = https://github.com/vim-scripts/YankRing.vim
+[submodule "home/.vim/bundle/xoloxmisc"]
+	path = home/.vim/bundle/xoloxmisc
+	url = https://github.com/xolox/vim-misc.git
+[submodule "home/.vim/bundle/notes"]
+	path = home/.vim/bundle/notes
+	url = https://github.com/xolox/vim-notes.git
+[submodule "home/.vim/bundle/scratch"]
+	path = home/.vim/bundle/scratch
+	url = https://github.com/mtth/scratch.vim
+[submodule "home/.vim/bundle/fugitive"]
+	path = home/.vim/bundle/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "home/.vim/bundle/colorschemes"]
+	path = home/.vim/bundle/colorschemes
+	url = https://github.com/flazz/vim-colorschemes.git
+[submodule "home/.vim/bundle/rooter"]
+	path = home/.vim/bundle/rooter
+	url = https://github.com/airblade/vim-rooter.git
+[submodule "home/.vim/bundle/ctrlp"]
+	path = home/.vim/bundle/ctrlp
+	url = https://github.com/kien/ctrlp.vim
+[submodule "home/.vim/bundle/nerdtree"]
+	path = home/.vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree
+[submodule "home/.vim/bundle/delimitmate"]
+	path = home/.vim/bundle/delimitmate
+	url = https://github.com/Raimondi/delimitMate.git
+[submodule "home/.vim/bundle/supertab"]
+	path = home/.vim/bundle/supertab
+	url = https://github.com/ervandew/supertab.git
+[submodule "home/.vim/bundle/identline"]
+	path = home/.vim/bundle/identline
+	url = https://github.com/Yggdroot/indentLine.git
+[submodule "home/.vim/bundle/ultisnips"]
+	path = home/.vim/bundle/ultisnips
+	url = https://github.com/SirVer/ultisnips.git
+[submodule "home/.vim/vim-snippets"]
+	path = home/.vim/vim-snippets
+	url = https://github.com/honza/vim-snippets.git
