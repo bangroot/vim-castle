@@ -1,10 +1,18 @@
 let mapleader = ","
 let g:mapleader = ","
 nnoremap <silent> <C-F5> :so ~/.vim/config/keymap.vim<cr>
+
+"File searching
 nnoremap <silent> <Leader><Leader> :CtrlP<cr>
 nnoremap <silent> <Leader>e :CtrlPMRU<cr>
 nnoremap <silent> <Leader>a :Ag! 
 nnoremap <silent> <Leader>1 :NERDTreeFocusToggle<cr>
+
+"Selection
+
+map <C-W> <Plug>(expand_region_expand)
+"Alt-W
+map ∑ <Plug>(expand_region_shrink)
 
 "Open structure view
 map <C-F12> :TlistToggle<cr>
@@ -12,10 +20,12 @@ let tlist_groovy_settings = 'groovy;p:package;c:class;i:interface;f:function;v:v
 
 "Close the current buffer
 nnoremap <C-F4> :bp <BAR> bd #<CR>
+
 "Folding
 map <C-f> za
 map <C-f><C-f> zR
 map <C-f><C-f><C-f> zM
+
 " git
 nnoremap <silent> <Leader>gd :Gdiff<cr>
 nnoremap <silent> <Leader>gl :Glog<cr>
