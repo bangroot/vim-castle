@@ -1,72 +1,72 @@
-[submodule "home/.vim/bundle/obsession"]
-	path = home/.vim/bundle/obsession
+[submodule "dotvim/bundle/obsession"]
+	path = dotvim/bundle/obsession
 	url = https://github.com/tpope/vim-obsession.git
-[submodule "home/.vim/bundle/airline"]
-	path = home/.vim/bundle/airline
+[submodule "dotvim/bundle/airline"]
+	path = dotvim/bundle/airline
 	url = https://github.com/bling/vim-airline
-[submodule "home/.vim/bundle/dispatch"]
-	path = home/.vim/bundle/dispatch
+[submodule "dotvim/bundle/dispatch"]
+	path = dotvim/bundle/dispatch
 	url = https://github.com/tpope/vim-dispatch
-[submodule "home/.vim/bundle/nerdtree-tabs"]
-	path = home/.vim/bundle/nerdtree-tabs
+[submodule "dotvim/bundle/nerdtree-tabs"]
+	path = dotvim/bundle/nerdtree-tabs
 	url = https://github.com/jistr/vim-nerdtree-tabs
-[submodule "home/.vim/bundle/ag"]
-	path = home/.vim/bundle/ag
+[submodule "dotvim/bundle/ag"]
+	path = dotvim/bundle/ag
 	url = https://github.com/rking/ag.vim
-[submodule "home/.vim/bundle/taglist"]
-	path = home/.vim/bundle/taglist
+[submodule "dotvim/bundle/taglist"]
+	path = dotvim/bundle/taglist
 	url = https://github.com/vim-scripts/taglist.vim
-[submodule "home/.vim/bundle/repeat"]
-	path = home/.vim/bundle/repeat
+[submodule "dotvim/bundle/repeat"]
+	path = dotvim/bundle/repeat
 	url = https://github.com/tpope/vim-repeat.git
-[submodule "home/.vim/bundle/unimpaired"]
-	path = home/.vim/bundle/unimpaired
+[submodule "dotvim/bundle/unimpaired"]
+	path = dotvim/bundle/unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
-[submodule "home/.vim/bundle/yankring"]
-	path = home/.vim/bundle/yankring
+[submodule "dotvim/bundle/yankring"]
+	path = dotvim/bundle/yankring
 	url = https://github.com/vim-scripts/YankRing.vim
-[submodule "home/.vim/bundle/xoloxmisc"]
-	path = home/.vim/bundle/xoloxmisc
+[submodule "dotvim/bundle/xoloxmisc"]
+	path = dotvim/bundle/xoloxmisc
 	url = https://github.com/xolox/vim-misc.git
-[submodule "home/.vim/bundle/notes"]
-	path = home/.vim/bundle/notes
+[submodule "dotvim/bundle/notes"]
+	path = dotvim/bundle/notes
 	url = https://github.com/xolox/vim-notes.git
-[submodule "home/.vim/bundle/scratch"]
-	path = home/.vim/bundle/scratch
+[submodule "dotvim/bundle/scratch"]
+	path = dotvim/bundle/scratch
 	url = https://github.com/mtth/scratch.vim
-[submodule "home/.vim/bundle/fugitive"]
-	path = home/.vim/bundle/fugitive
+[submodule "dotvim/bundle/fugitive"]
+	path = dotvim/bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "home/.vim/bundle/colorschemes"]
-	path = home/.vim/bundle/colorschemes
+[submodule "dotvim/bundle/colorschemes"]
+	path = dotvim/bundle/colorschemes
 	url = https://github.com/flazz/vim-colorschemes.git
-[submodule "home/.vim/bundle/rooter"]
-	path = home/.vim/bundle/rooter
+[submodule "dotvim/bundle/rooter"]
+	path = dotvim/bundle/rooter
 	url = https://github.com/airblade/vim-rooter.git
-[submodule "home/.vim/bundle/ctrlp"]
-	path = home/.vim/bundle/ctrlp
+[submodule "dotvim/bundle/ctrlp"]
+	path = dotvim/bundle/ctrlp
 	url = https://github.com/kien/ctrlp.vim
-[submodule "home/.vim/bundle/nerdtree"]
-	path = home/.vim/bundle/nerdtree
+[submodule "dotvim/bundle/nerdtree"]
+	path = dotvim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree
-[submodule "home/.vim/bundle/delimitmate"]
-	path = home/.vim/bundle/delimitmate
+[submodule "dotvim/bundle/delimitmate"]
+	path = dotvim/bundle/delimitmate
 	url = https://github.com/Raimondi/delimitMate.git
-[submodule "home/.vim/bundle/supertab"]
-	path = home/.vim/bundle/supertab
+[submodule "dotvim/bundle/supertab"]
+	path = dotvim/bundle/supertab
 	url = https://github.com/ervandew/supertab.git
-[submodule "home/.vim/bundle/identline"]
-	path = home/.vim/bundle/identline
+[submodule "dotvim/bundle/identline"]
+	path = dotvim/bundle/identline
 	url = https://github.com/Yggdroot/indentLine.git
-[submodule "home/.vim/bundle/ultisnips"]
-	path = home/.vim/bundle/ultisnips
+[submodule "dotvim/bundle/ultisnips"]
+	path = dotvim/bundle/ultisnips
 	url = https://github.com/SirVer/ultisnips.git
-[submodule "home/.vim/vim-snippets"]
-	path = home/.vim/vim-snippets
+[submodule "dotvim/vim-snippets"]
+	path = dotvim/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
-[submodule "home/.vim/bundle/youcompleteme"]
-	path = home/.vim/bundle/youcompleteme
+[submodule "dotvim/bundle/youcompleteme"]
+	path = dotvim/bundle/youcompleteme
 	url = https://github.com/Valloric/YouCompleteMe
-[submodule "home/.vim/bundle/expand-region"]
-	path = home/.vim/bundle/expand-region
+[submodule "dotvim/bundle/expand-region"]
+	path = dotvim/bundle/expand-region
 	url = https://github.com/terryma/vim-expand-region
