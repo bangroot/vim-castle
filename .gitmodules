@@ -64,3 +64,9 @@
 [submodule "home/.vim/vim-snippets"]
 	path = home/.vim/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
+[submodule "home/.vim/bundle/youcompleteme"]
+	path = home/.vim/bundle/youcompleteme
+	url = https://github.com/Valloric/YouCompleteMe
+[submodule "home/.vim/bundle/expand-region"]
+	path = home/.vim/bundle/expand-region
+	url = https://github.com/terryma/vim-expand-region

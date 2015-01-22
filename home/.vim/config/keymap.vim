@@ -1,7 +1,10 @@
-
+let mapleader = ","
+let g:mapleader = ","
+nnoremap <silent> <C-F5> :so ~/.vim/config/keymap.vim<cr>
 nnoremap <silent> <Leader><Leader> :CtrlP<cr>
+nnoremap <silent> <Leader>e :CtrlPMRU<cr>
 nnoremap <silent> <Leader>a :Ag! 
-nnoremap ¡ :NERDTreeFocus<cr>
+nnoremap <silent> <Leader>1 :NERDTreeFocusToggle<cr>
 
 "Open structure view
 map <C-F12> :TlistToggle<cr>
@@ -50,10 +53,6 @@ nmap <silent> <C-h> :wincmd h<CR>
 nmap <silent> <C-j> :wincmd j<CR>
 nmap <silent> <C-k> :wincmd k<CR>
 nmap <silent> <C-l> :wincmd l<CR>
-
-:map <Leader>e :cn<cr>zz<cr>:cc<cr>zv
-:map <Leader>p :cp<cr>
-:map <Leader>l :clist<cr>
 
 ":cmap bc Bclose
 if has("unix")

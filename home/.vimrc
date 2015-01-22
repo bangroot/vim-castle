@@ -21,8 +21,6 @@ set autowrite
 set textwidth=100
 set bs=2
 set so=7
-let mapleader = ","
-let g:mapleader = ","
 set hidden
 set wildmenu
 set wildignore=*/generated/*,.git,*.pyc,.svn,*.jar,*.class,*.un~,*.swp,*.swo,*.png,*.jpg,*.ttf,*.woff,*/javadoc/*,*.gif,*.ogg,*.mp3,*.mp4,*/build/**
@@ -59,6 +57,7 @@ source ~/.vim/config/folding.vim
 source ~/.vim/config/nerdtree.vim
 source ~/.vim/config/java.vim
 source ~/.vim/config/gist.vim
+source ~/.vim/config/eclim.vim
 
 " UI {{{
 augroup CursorLine
