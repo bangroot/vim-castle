@@ -64,9 +64,9 @@
 [submodule "dotvim/vim-snippets"]
 	path = dotvim/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
-[submodule "dotvim/bundle/youcompleteme"]
-	path = dotvim/bundle/youcompleteme
-	url = https://github.com/Valloric/YouCompleteMe
 [submodule "dotvim/bundle/expand-region"]
 	path = dotvim/bundle/expand-region
 	url = https://github.com/terryma/vim-expand-region
+[submodule "dotvim/bundle/neocomplete"]
+	path = dotvim/bundle/neocomplete
+	url = https://github.com/Shougo/neocomplete.vim
