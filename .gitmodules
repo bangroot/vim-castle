@@ -67,6 +67,3 @@
 [submodule "dotvim/bundle/expand-region"]
 	path = dotvim/bundle/expand-region
 	url = https://github.com/terryma/vim-expand-region
-[submodule "dotvim/bundle/neocomplete"]
-	path = dotvim/bundle/neocomplete
-	url = https://github.com/Shougo/neocomplete.vim

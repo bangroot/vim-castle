@@ -17,6 +17,7 @@ map ∑ <Plug>(expand_region_shrink)
 "Open structure view
 map <C-F12> :TlistToggle<cr>
 let tlist_groovy_settings = 'groovy;p:package;c:class;i:interface;f:function;v:variables'
+inoremap <C-Space> <C-X><C-U>
 
 "Close the current buffer
 nnoremap <C-F4> :bp <BAR> bd #<CR>
@@ -32,10 +33,10 @@ nnoremap <silent> <Leader>gl :Glog<cr>
 nnoremap <silent> <Leader>gs :Gstatus<cr>
 nnoremap <silent> <Leader>gb :Gblame<cr>
 nnoremap <silent> <Leader>gc :Gcommit<cr>
-map <C-k> :Gcommit<cr>
-map <C-t> :Gpull<cr>
-map <C-k><C-k> :Gpush<cr>
-map <A-S-C> :Gstatus<cr>
+nnoremap <C-k> :Gcommit<cr>
+nnoremap <C-t> :Gpull<cr>
+nnoremap <C-k><C-k> :Gpush<cr>
+nnoremap <A-S-C> :Gstatus<cr>
 nnoremap <silent> <Leader>GC :Git svn dcommit<cr>
 nnoremap <silent> <Leader>GR :Git svn rebase<cr>:CommandTFlush<cr>
 nnoremap <silent> <Leader>amend :Git commit --amend<cr>
@@ -49,6 +50,8 @@ nnoremap <silent> <Leader>j8 :call SetJDK('1.8')<cr>
 
 nnoremap <silent> <Leader>gun :GundoToggle<cr>
 
+nnoremap <F9> :Dispatch<cr>
+
 " Scratch
 nnoremap <silent> <Leader>s :Scratch<cr>
 
@@ -59,10 +62,10 @@ nnoremap <silent> <Leader>d ^wiDONE <esc>
 nnoremap <silent> <Leader>yr :YRShow<cr>
 
 " Windows 
-nmap <silent> <C-h> :wincmd h<CR>
-nmap <silent> <C-j> :wincmd j<CR>
-nmap <silent> <C-k> :wincmd k<CR>
-nmap <silent> <C-l> :wincmd l<CR>
+nnoremap <silent> <C-h> :wincmd h<CR>
+nnoremap <silent> <C-j> :wincmd j<CR>
+nnoremap <silent> <C-k> :wincmd k<CR>
+nnoremap <silent> <C-l> :wincmd l<CR>
 
 ":cmap bc Bclose
 if has("unix")
@@ -75,13 +78,14 @@ if has("unix")
 	endif
 endif
 
-:map <F6> :set spell!<cr>
-:map <Leader>h :set hlsearch!<cr>
-:map <F8> :set wrap!<cr>
+nnoremap <F6> :set spell!<cr>
+nnoremap <Leader>h :set hlsearch!<cr>
+nnoremap <F8> :set wrap!<cr>
 
 " NERDTree
-:map \\ :NERDTreeToggle<cr>
+nnoremap \\ :NERDTreeToggle<cr>
 
-:map == :bnext<cr>
-:map -- :bprev<cr>
+nnoremap == :bnext<cr>
+nnoremap -- :bprev<cr>
 
+nnoremap <leader>i :JavaImport<cr>

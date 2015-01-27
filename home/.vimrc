@@ -29,7 +29,8 @@ set number
 :set mouse=nv
 :set mousehide
 let g:dispatch_compilers = {
-  \ 'gradle test': 'gradle' }
+  \ 'gradle test': 'gradle',
+	\ './gradlew classes': 'gradlew'}
 map Q gq}
 let g:yankring_history_file='.yankring_history'
 let g:notes_directories = ['~/Google\ Drive/notes']
@@ -57,6 +58,7 @@ source ~/.vim/config/folding.vim
 source ~/.vim/config/nerdtree.vim
 source ~/.vim/config/java.vim
 source ~/.vim/config/gist.vim
+"source ~/.vim/config/neocomplete.vim
 source ~/.vim/config/eclim.vim
 
 " UI {{{
@@ -95,7 +97,7 @@ fu! CodeInit()
 	set shiftwidth=2
 	set tabstop=2
 	set softtabstop=2
-	call s:HighlightLongLines(100)
+"	call s:HighlightLongLines(100)
 	if exists("g:has_local_codeinit")
 		call LocalCodeInit()
 	endif
