@@ -48,7 +48,7 @@ hi LongLines term=standout ctermfg=red cterm=underline
 hi MatchParen ctermbg=63
 " }}}
 
-source ~/.vim/mac_keys
+source ~/.vim/config/mac_keys.vim
 source ~/.vim/config/keymap.vim
 source ~/.vim/config/ctrlp.vim
 source ~/.vim/config/ultisnips.vim
