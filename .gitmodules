@@ -31,9 +31,6 @@
 [submodule "dotvim/bundle/notes"]
 	path = dotvim/bundle/notes
 	url = https://github.com/xolox/vim-notes.git
-[submodule "dotvim/bundle/scratch"]
-	path = dotvim/bundle/scratch
-	url = https://github.com/mtth/scratch.vim
 [submodule "dotvim/bundle/fugitive"]
 	path = dotvim/bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
@@ -52,9 +49,6 @@
 [submodule "dotvim/bundle/delimitmate"]
 	path = dotvim/bundle/delimitmate
 	url = https://github.com/Raimondi/delimitMate.git
-[submodule "dotvim/bundle/supertab"]
-	path = dotvim/bundle/supertab
-	url = https://github.com/ervandew/supertab.git
 [submodule "dotvim/bundle/identline"]
 	path = dotvim/bundle/identline
 	url = https://github.com/Yggdroot/indentLine.git
@@ -67,3 +61,9 @@
 [submodule "dotvim/bundle/expand-region"]
 	path = dotvim/bundle/expand-region
 	url = https://github.com/terryma/vim-expand-region
+[submodule "dotvim/bundle/gundo"]
+	path = dotvim/bundle/gundo
+	url = http://github.com/sjl/gundo.vim.git
+[submodule "dotvim/bundle/vimcompletesme"]
+	path = dotvim/bundle/vimcompletesme
+	url = https://github.com/ajh17/VimCompletesMe.git

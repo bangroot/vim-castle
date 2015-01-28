@@ -6,13 +6,10 @@ nnoremap <silent> <C-F5> :so ~/.vim/config/keymap.vim<cr>
 nnoremap <silent> <Leader><Leader> :CtrlP<cr>
 nnoremap <silent> <Leader>e :CtrlPMRU<cr>
 nnoremap <silent> <Leader>a :Ag! 
-nnoremap <silent> <Leader>1 :NERDTreeFocusToggle<cr>
 
 "Selection
-
-map <C-W> <Plug>(expand_region_expand)
-"Alt-W
-map ∑ <Plug>(expand_region_shrink)
+map <Leader>w <Plug>(expand_region_expand)
+map <Leader>s <Plug>(expand_region_shrink)
 
 "Open structure view
 map <C-F12> :TlistToggle<cr>
@@ -33,10 +30,7 @@ nnoremap <silent> <Leader>gl :Glog<cr>
 nnoremap <silent> <Leader>gs :Gstatus<cr>
 nnoremap <silent> <Leader>gb :Gblame<cr>
 nnoremap <silent> <Leader>gc :Gcommit<cr>
-nnoremap <C-k> :Gcommit<cr>
-nnoremap <C-t> :Gpull<cr>
-nnoremap <C-k><C-k> :Gpush<cr>
-nnoremap <A-S-C> :Gstatus<cr>
+nnoremap <silent> <Leader>gp :Gpush<cr>
 nnoremap <silent> <Leader>GC :Git svn dcommit<cr>
 nnoremap <silent> <Leader>GR :Git svn rebase<cr>:CommandTFlush<cr>
 nnoremap <silent> <Leader>amend :Git commit --amend<cr>
@@ -48,12 +42,9 @@ nnoremap <silent> <Leader>j6 :call SetJDK('1.6')<cr>
 nnoremap <silent> <Leader>j7 :call SetJDK('1.7')<cr>
 nnoremap <silent> <Leader>j8 :call SetJDK('1.8')<cr>
 
-nnoremap <silent> <Leader>gun :GundoToggle<cr>
+nnoremap <silent> <Leader>u :GundoToggle<cr>
 
 nnoremap <F9> :Dispatch<cr>
-
-" Scratch
-nnoremap <silent> <Leader>s :Scratch<cr>
 
 " vim-notes
 nnoremap <silent> <Leader>d ^wiDONE <esc>
@@ -84,6 +75,8 @@ nnoremap <F8> :set wrap!<cr>
 
 " NERDTree
 nnoremap \\ :NERDTreeToggle<cr>
+nnoremap <leader>\\ :NERDTreeFind<cr>
+nnoremap <tab><tab> :call g:NERDTreeFocusFind()<cr>
 
 nnoremap == :bnext<cr>
 nnoremap -- :bprev<cr>

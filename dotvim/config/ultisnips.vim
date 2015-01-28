@@ -1,4 +1,5 @@
 
 let g:UltiSnipsSnippetDirectories=["vim-snippets/UltiSnips", "UltiSnips"] 
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+let g:UltiSnipsJumpForwardTrigger="<C-]>"
+let g:UltiSnipsJumpBackwardTrigger="<c-[>"
+let g:UltiSnipsExpandTrigger="<C-+>"
