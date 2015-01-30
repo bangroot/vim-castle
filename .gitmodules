@@ -67,3 +67,6 @@
 [submodule "dotvim/bundle/vimcompletesme"]
 	path = dotvim/bundle/vimcompletesme
 	url = https://github.com/ajh17/VimCompletesMe.git
+[submodule "dotvim/bundle/easymotion"]
+	path = dotvim/bundle/easymotion
+	url = https://github.com/Lokaltog/vim-easymotion

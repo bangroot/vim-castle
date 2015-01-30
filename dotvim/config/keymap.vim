@@ -12,7 +12,7 @@ map <Leader>w <Plug>(expand_region_expand)
 map <Leader>s <Plug>(expand_region_shrink)
 
 "Open structure view
-map <C-F12> :TlistToggle<cr>
+map <leader>s :TlistToggle<cr>
 let tlist_groovy_settings = 'groovy;p:package;c:class;i:interface;f:function;v:variables'
 inoremap <C-Space> <C-X><C-U>
 
