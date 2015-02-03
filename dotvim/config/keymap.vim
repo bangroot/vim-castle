@@ -3,9 +3,16 @@ let g:mapleader = ","
 nnoremap <silent> <C-F5> :so ~/.vim/config/keymap.vim<cr>
 
 "File searching
-nnoremap <silent> <Leader><Leader> :CtrlP<cr>
+nnoremap <silent> <Leader>p :CtrlP<cr>
 nnoremap <silent> <Leader>e :CtrlPMRU<cr>
+nnoremap <silent> <Leader>b :CtrlPBuffer<cr>
 nnoremap <silent> <Leader>a :Ag! 
+
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+nmap s <Plug>(easymotion-s2)
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
 
 "Selection
 map <Leader>w <Plug>(expand_region_expand)
@@ -17,7 +24,7 @@ let tlist_groovy_settings = 'groovy;p:package;c:class;i:interface;f:function;v:v
 inoremap <C-Space> <C-X><C-U>
 
 "Close the current buffer
-nnoremap <C-F4> :bp <BAR> bd #<CR>
+nnoremap <C-W> :bp <BAR> bd #<CR>
 
 "Folding
 map <C-f> za
