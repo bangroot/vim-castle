@@ -81,7 +81,7 @@ function GetGroovyIndent()
 
   " correct for continuation lines of "throws", "implements" and "extends"
   let cont_kw = matchstr(getline(prev),
-        \ '^\s*\zs\(throws\|implements\|extends\)\>\ze.*,\s*$')
+        \ '^\s*\zs\(throws\|implements\|extends\|\)\>\ze.*,\s*$')
   if strlen(cont_kw) > 0
     let amount = strlen(cont_kw) + 1
     if getline(lnum) !~ ',\s*$'

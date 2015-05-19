@@ -3,6 +3,7 @@ set encoding=utf-8
 set nocompatible
 "}}}
 
+set guifont=Sauce\ Code\ Powerline\ Light:h10
 " Pathogen {{{
 filetype off
 exec pathogen#infect('bundle/{}', 'bundle.local/{}')
@@ -34,6 +35,7 @@ let g:dispatch_compilers = {
 map Q gq}
 let g:yankring_history_file='.yankring_history'
 let g:notes_directories = ['~/Google\ Drive/notes']
+set listchars=tab:▸\ ,eol:¬
 au CursorHold,CursorHoldI,WinEnter,BufWinEnter * checktime
 " }}}
 
@@ -64,12 +66,15 @@ source ~/.vim/config/eclim.vim
 source ~/.vim/config/gundo.vim
 source ~/.vim/config/tlist.vim
 source ~/.vim/config/easymotion.vim
+source ~/.vim/config/surround.vim
 
 set nocursorcolumn
 set nocursorline
 set norelativenumber
 syntax sync minlines=256
 
+set directory=~/.backup//
+set backupdir=~/.backup//
 
 set autoindent
 filetype plugin indent on

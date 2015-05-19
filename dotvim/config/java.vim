@@ -15,4 +15,3 @@ endfunction
 function! RemoveFromPath(str)
 	let $PATH = system('echo $PATH | sed -E -e "s;:' . a:str . ';;" -e "s;' . a:str . ':?;;"')
 endfunction
-

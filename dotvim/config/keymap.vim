@@ -8,8 +8,8 @@ nnoremap <silent> <Leader>e :CtrlPMRU<cr>
 nnoremap <silent> <Leader>b :CtrlPBuffer<cr>
 nnoremap <silent> <Leader>a :Ag! 
 
-map  / <Plug>(easymotion-sn)
-omap / <Plug>(easymotion-tn)
+map  ?? <Plug>(easymotion-sn)
+omap ?? <Plug>(easymotion-tn)
 nmap s <Plug>(easymotion-s2)
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
@@ -20,11 +20,17 @@ map <Leader>s <Plug>(expand_region_shrink)
 
 "Open structure view
 map <leader>s :TlistToggle<cr>
-let tlist_groovy_settings = 'groovy;p:package;c:class;i:interface;f:function;v:variables'
+let tlist_groovy_settings = 'groovy;p:package;c:class;i:interface;f:function;l:closures;v:variables'
 inoremap <C-Space> <C-X><C-U>
+nnoremap [[ <<
+nnoremap ]] >>
+vnoremap [[ <gv
+vnoremap ]] >gv
 
+nnoremap <F3> :set hlsearch!<cr>
 "Close the current buffer
-nnoremap <C-W> :bp <BAR> bd #<CR>
+nnoremap <F4> :bp <BAR> bd #<CR>
+map <F12> <C-W>z :cclo<cr>
 
 "Folding
 map <C-f> za
@@ -43,6 +49,7 @@ nnoremap <silent> <Leader>GR :Git svn rebase<cr>:CommandTFlush<cr>
 nnoremap <silent> <Leader>amend :Git commit --amend<cr>
 nnoremap <silent> <Leader>stash :Git stash<cr>
 nnoremap <silent> <Leader>pop :Git stash pop<cr>
+nnoremap <Leader>gD <c-w>h<c-w>c
 
 " java
 nnoremap <silent> <Leader>j6 :call SetJDK('1.6')<cr>
@@ -77,7 +84,7 @@ if has("unix")
 endif
 
 nnoremap <F6> :set spell!<cr>
-nnoremap <Leader>h :set hlsearch!<cr>
+nnoremap <Leader>h :set list!<cr>
 nnoremap <F8> :set wrap!<cr>
 
 " NERDTree
@@ -89,3 +96,4 @@ nnoremap == :bnext<cr>
 nnoremap -- :bprev<cr>
 
 nnoremap <leader>i :JavaImport<cr>
+map <leader>f mzgg=G`z<CR>
