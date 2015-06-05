@@ -1,12 +1,15 @@
-let mapleader = ","
-let g:mapleader = ","
+let mapleader = "\<Space>"
+let g:mapleader = "\<Space>"
 nnoremap <silent> <C-F5> :so ~/.vim/config/keymap.vim<cr>
 
+nmap <Leader><Leader> V
+
 "File searching
-nnoremap <silent> <Leader>p :CtrlP<cr>
+nnoremap <silent> <Leader>o :CtrlP<cr>
 nnoremap <silent> <Leader>e :CtrlPMRU<cr>
 nnoremap <silent> <Leader>b :CtrlPBuffer<cr>
 nnoremap <silent> <Leader>a :Ag! 
+nnoremap <silent> <Leader>w :w<CR>
 
 map  ?? <Plug>(easymotion-sn)
 omap ?? <Plug>(easymotion-tn)
@@ -15,8 +18,8 @@ map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 
 "Selection
-map <Leader>w <Plug>(expand_region_expand)
-map <Leader>s <Plug>(expand_region_shrink)
+vmap v <Plug>(expand_region_expand)
+vmap <C-v> <Plug>(expand_region_shrink)
 
 "Open structure view
 map <leader>s :TlistToggle<cr>
@@ -72,18 +75,22 @@ nnoremap <silent> <C-j> :wincmd j<CR>
 nnoremap <silent> <C-k> :wincmd k<CR>
 nnoremap <silent> <C-l> :wincmd l<CR>
 
-":cmap bc Bclose
-if has("unix")
-	let s:uname = system("echo -n \"$(uname)\"")
-	if s:uname == "Darwin"
-		nnoremap <silent> <Leader>pp :set paste<cr>$:r ! pbpaste <cr>:set nopaste<cr>$
-	else
-		nnoremap <silent> <Leader>pp :set paste<cr>$:r ! xclip -o<cr>:set nopaste<cr>$
-		nnoremap <silent> <Leader>pv :set paste<cr>$:r ! xclip -selection clipboard -o<cr>:set nopaste<cr>$
-	endif
-endif
+"System copy paste
+vmap <Leader>y "+y
+vmap <Leader>d "+d
+nmap <Leader>p "+p
+nmap <Leader>P "+P
+vmap <Leader>p "+p
+vnoremap <silent> y y`]
+vnoremap <silent> p p`]
+nnoremap <silent> p p`]
 
-nnoremap <F6> :set spell!<cr>
+"Find replace
+vnoremap <silent> s //e<C-r>=&selection=='exclusive'?'+1':''<CR><CR>
+    \:<C-u>call histdel('search',-1)<Bar>let @/=histget('search',-1)<CR>gv
+omap s :normal vs<CR>nnoremap <F6> :set spell!<cr>
+
+
 nnoremap <Leader>h :set list!<cr>
 nnoremap <F8> :set wrap!<cr>
 
@@ -95,5 +102,4 @@ nnoremap <tab><tab> :call g:NERDTreeFocusFind()<cr>
 nnoremap == :bnext<cr>
 nnoremap -- :bprev<cr>
 
-nnoremap <leader>i :JavaImport<cr>
 map <leader>f mzgg=G`z<CR>

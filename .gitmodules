@@ -73,3 +73,6 @@
 [submodule "dotvim/bundle/surround"]
 	path = dotvim/bundle/surround
 	url = https://github.com/tpope/vim-surround.git
+[submodule "dotvim/bundle/hackathon-Embeditor"]
+	path = dotvim/bundle/hackathon-Embeditor
+	url = https://github.com/bangroot/hackathon-Embeditor.git
