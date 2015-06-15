@@ -10,6 +10,7 @@ nnoremap <silent> <Leader>e :CtrlPMRU<cr>
 nnoremap <silent> <Leader>b :CtrlPBuffer<cr>
 nnoremap <silent> <Leader>a :Ag! 
 nnoremap <silent> <Leader>w :w<CR>
+nnoremap <Leader>q :bp <BAR> bd #<CR>
 
 map  ?? <Plug>(easymotion-sn)
 omap ?? <Plug>(easymotion-tn)
@@ -32,7 +33,6 @@ vnoremap ]] >gv
 
 nnoremap <F3> :set hlsearch!<cr>
 "Close the current buffer
-nnoremap <F4> :bp <BAR> bd #<CR>
 map <F12> <C-W>z :cclo<cr>
 
 "Folding
@@ -43,7 +43,7 @@ map <C-f><C-f><C-f> zM
 " git
 nnoremap <silent> <Leader>gd :Gdiff<cr>
 nnoremap <silent> <Leader>gl :Glog<cr>
-nnoremap <silent> <Leader>gs :Gstatus<cr>
+nnoremap <silent> <Leader>gs :Gstatus<cr><C-w>20+
 nnoremap <silent> <Leader>gb :Gblame<cr>
 nnoremap <silent> <Leader>gc :Gcommit<cr>
 nnoremap <silent> <Leader>gp :Gpush<cr>
@@ -101,5 +101,7 @@ nnoremap <tab><tab> :call g:NERDTreeFocusFind()<cr>
 
 nnoremap == :bnext<cr>
 nnoremap -- :bprev<cr>
+nnoremap <Leader><Right> :bnext<cr>
+nnoremap <Leader><Left> :bprev<cr>
 
 map <leader>f mzgg=G`z<CR>
