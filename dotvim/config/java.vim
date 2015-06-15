@@ -2,7 +2,7 @@
 let java_allow_cpp_keywords=1
 let java_highlight_all=1
 let java_minlines=50
-autocmd BufRead *.java nnoremap <silent> <Leader>o o@Override<esc>
+"autocmd BufRead *.java nnoremap <silent> <Leader>o o@Override<esc>
 
 function! SetJDK(version)
    call RemoveFromPath('/System/Library/Frameworks/JavaVM.framework/Home/bin')

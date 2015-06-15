@@ -62,7 +62,7 @@ source ~/.vim/config/java.vim
 source ~/.vim/config/gist.vim
 "source ~/.vim/config/neocomplete.vim
 source ~/.vim/config/vimcompletesme.vim
-source ~/.vim/config/eclim.vim
+"source ~/.vim/config/eclim.vim
 source ~/.vim/config/gundo.vim
 source ~/.vim/config/tlist.vim
 source ~/.vim/config/easymotion.vim
