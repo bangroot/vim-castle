@@ -84,6 +84,7 @@ vmap <Leader>p "+p
 vnoremap <silent> y y`]
 vnoremap <silent> p p`]
 nnoremap <silent> p p`]
+nmap <F4> :set paste!<cr>
 
 "Find replace
 vnoremap <silent> s //e<C-r>=&selection=='exclusive'?'+1':''<CR><CR>

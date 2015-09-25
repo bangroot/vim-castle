@@ -76,3 +76,6 @@
 [submodule "dotvim/bundle/hackathon-Embeditor"]
 	path = dotvim/bundle/hackathon-Embeditor
 	url = https://github.com/bangroot/hackathon-Embeditor.git
+[submodule "dotvim/bundle/nerdcommenter"]
+	path = dotvim/bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git

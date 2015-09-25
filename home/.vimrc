@@ -75,6 +75,7 @@ syntax sync minlines=256
 
 set directory=~/.backup//
 set backupdir=~/.backup//
+set undodir=~/.backup//
 
 set autoindent
 filetype plugin indent on
