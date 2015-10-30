@@ -1,8 +1,8 @@
 
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline#extensions#tabline#fnamemod = ':p:.'
 let g:airline_powerline_fonts = 1
-let g:airline_theme='tomorrow'
+let g:airline_theme='gruvbox'
 
 set statusline=%t%m%r%h%w\ [%{&ff}\ \|\ %04l,%04v\ (%p%%)\ \|\ lines:\ %L]\ %{fugitive#statusline()}
 set laststatus=2

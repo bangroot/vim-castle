@@ -32,13 +32,6 @@ vnoremap [[ <gv
 vnoremap ]] >gv
 
 nnoremap <F3> :set hlsearch!<cr>
-"Close the current buffer
-map <F12> <C-W>z :cclo<cr>
-
-"Folding
-map <C-f> za
-map <C-f><C-f> zR
-map <C-f><C-f><C-f> zM
 
 " git
 nnoremap <silent> <Leader>gd :Gdiff<cr>
@@ -63,8 +56,6 @@ nnoremap <silent> <Leader>u :GundoToggle<cr>
 
 nnoremap <F9> :Dispatch<cr>
 
-" vim-notes
-nnoremap <silent> <Leader>d ^wiDONE <esc>
 
 " YankRing
 nnoremap <silent> <Leader>yr :YRShow<cr>
@@ -84,7 +75,13 @@ vmap <Leader>p "+p
 vnoremap <silent> y y`]
 vnoremap <silent> p p`]
 nnoremap <silent> p p`]
-nmap <F4> :set paste!<cr>
+map <F4> :set paste!<cr>
+imap <F4> <C-O>:set paste!<cr>
+
+nnoremap <leader>d "_d
+nnoremap <leader>c "_c
+vnoremap <leader>d "_d
+vnoremap <leader>p "_dP
 
 "Find replace
 vnoremap <silent> s //e<C-r>=&selection=='exclusive'?'+1':''<CR><CR>
@@ -100,8 +97,9 @@ nnoremap \\ :NERDTreeToggle<cr>
 nnoremap <leader>\\ :NERDTreeFind<cr>
 nnoremap <tab><tab> :call g:NERDTreeFocusFind()<cr>
 
-nnoremap == :bnext<cr>
-nnoremap -- :bprev<cr>
+"NERDCommenter
+map <Leader>/ <Plug>NERDCommenterToggle
+
 nnoremap <Leader><Right> :bnext<cr>
 nnoremap <Leader><Left> :bprev<cr>
 
