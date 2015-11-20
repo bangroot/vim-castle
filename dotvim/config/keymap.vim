@@ -40,6 +40,8 @@ nnoremap <silent> <Leader>gs :Gstatus<cr><C-w>20+
 nnoremap <silent> <Leader>gb :Gblame<cr>
 nnoremap <silent> <Leader>gc :Gcommit<cr>
 nnoremap <silent> <Leader>gp :Gpush<cr>
+nnoremap <silent> <C-k> :Gpush<cr>
+nnoremap <silent> <C-t> :Gpull<cr>
 nnoremap <silent> <Leader>GC :Git svn dcommit<cr>
 nnoremap <silent> <Leader>GR :Git svn rebase<cr>:CommandTFlush<cr>
 nnoremap <silent> <Leader>amend :Git commit --amend<cr>
@@ -65,6 +67,7 @@ nnoremap <silent> <C-h> :wincmd h<CR>
 nnoremap <silent> <C-j> :wincmd j<CR>
 nnoremap <silent> <C-k> :wincmd k<CR>
 nnoremap <silent> <C-l> :wincmd l<CR>
+nnoremap <silent> <Leader>Q :cclose<CR>
 
 "System copy paste
 vmap <Leader>y "+y
@@ -89,7 +92,7 @@ vnoremap <silent> s //e<C-r>=&selection=='exclusive'?'+1':''<CR><CR>
 omap s :normal vs<CR>nnoremap <F6> :set spell!<cr>
 
 
-nnoremap <Leader>h :set list!<cr>
+nnoremap <Leader><F2> :set list!<cr>
 nnoremap <F8> :set wrap!<cr>
 
 " NERDTree
@@ -102,5 +105,7 @@ map <Leader>/ <Plug>NERDCommenterToggle
 
 nnoremap <Leader><Right> :bnext<cr>
 nnoremap <Leader><Left> :bprev<cr>
+nnoremap <Leader>l :bnext<cr>
+nnoremap <Leader>h :bprev<cr>
 
 map <leader>f mzgg=G`z<CR>

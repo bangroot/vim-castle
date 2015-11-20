@@ -4,7 +4,7 @@
 if exists("current_compiler")
     finish
 endif
-let current_compiler = "gradle"
+let current_compiler = "gradlew"
 
 if exists(":CompilerSet") != 2 " older Vim always used :setlocal
   command -nargs=* CompilerSet setlocal <args>
@@ -17,6 +17,7 @@ CompilerSet errorformat=
     \%-G:%.%\\+,
     \%m\ at\ %f:%l,
     \%-G\\s%#,
+		\%c,
     \%-GBUILD\ SUCCESSFUL,
     \%+GBUILD\ FAILED,
     \%-GTotal\ \time:\ %.%#
