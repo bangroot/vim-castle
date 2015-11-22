@@ -4,6 +4,7 @@ set nocompatible
 "}}}
 
 set guifont=Sauce\ Code\ Powerline\ Light:h10
+let g:VimCompileDoNotMap=1
 " Pathogen {{{
 filetype off
 exec pathogen#infect('bundle/{}', 'bundle.local/{}')
@@ -52,6 +53,7 @@ hi MatchParen ctermbg=63
 
 source ~/.vim/config/mac_keys.vim
 source ~/.vim/config/keymap.vim
+source ~/.vim/config/compilers.vim
 source ~/.vim/config/ctrlp.vim
 source ~/.vim/config/ultisnips.vim
 source ~/.vim/config/statusline.vim
@@ -67,6 +69,7 @@ source ~/.vim/config/gundo.vim
 source ~/.vim/config/tlist.vim
 source ~/.vim/config/easymotion.vim
 source ~/.vim/config/surround.vim
+source ~/.vim/config/syntastic.vim
 
 set nocursorcolumn
 set nocursorline

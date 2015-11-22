@@ -11,6 +11,7 @@ nnoremap <silent> <Leader>b :CtrlPBuffer<cr>
 nnoremap <silent> <Leader>a :Ag! 
 nnoremap <silent> <Leader>w :w<CR>
 nnoremap <Leader>q :bp <BAR> bd #<CR>
+nnoremap <Leader>r :%s/
 
 map  ?? <Plug>(easymotion-sn)
 omap ?? <Plug>(easymotion-tn)
@@ -56,7 +57,15 @@ nnoremap <silent> <Leader>j8 :call SetJDK('1.8')<cr>
 
 nnoremap <silent> <Leader>u :GundoToggle<cr>
 
-nnoremap <F9> :Dispatch<cr>
+"Dispatch
+nnoremap <F5> :Dispatch<cr>
+"Clean
+nnoremap <F7> :call vimcompile#Compile(1,0,0,0,1)<CR>
+"Exec
+nnoremap <F8> :call vimcompile#Compile(0,0,0,1,0)<CR><CR>
+"Compile
+nnoremap <F9> :call vimcompile#Compile(1,0,0,0,0)<CR>
+nnoremap <F10> :SyntasticCheck<cr> :call vimcompile#Compile(1,0,0,0,0)<CR>
 
 
 " YankRing
@@ -93,7 +102,7 @@ omap s :normal vs<CR>nnoremap <F6> :set spell!<cr>
 
 
 nnoremap <Leader><F2> :set list!<cr>
-nnoremap <F8> :set wrap!<cr>
+"nnoremap <F8> :set wrap!<cr>
 
 " NERDTree
 nnoremap \\ :NERDTreeToggle<cr>

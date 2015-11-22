@@ -13,18 +13,12 @@
 [submodule "dotvim/bundle/ag"]
 	path = dotvim/bundle/ag
 	url = https://github.com/rking/ag.vim
-[submodule "dotvim/bundle/taglist"]
-	path = dotvim/bundle/taglist
-	url = https://github.com/vim-scripts/taglist.vim
 [submodule "dotvim/bundle/repeat"]
 	path = dotvim/bundle/repeat
 	url = https://github.com/tpope/vim-repeat.git
 [submodule "dotvim/bundle/unimpaired"]
 	path = dotvim/bundle/unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
-[submodule "dotvim/bundle/yankring"]
-	path = dotvim/bundle/yankring
-	url = https://github.com/vim-scripts/YankRing.vim
 [submodule "dotvim/bundle/xoloxmisc"]
 	path = dotvim/bundle/xoloxmisc
 	url = https://github.com/xolox/vim-misc.git
@@ -49,18 +43,12 @@
 [submodule "dotvim/bundle/delimitmate"]
 	path = dotvim/bundle/delimitmate
 	url = https://github.com/Raimondi/delimitMate.git
-[submodule "dotvim/bundle/identline"]
-	path = dotvim/bundle/identline
-	url = https://github.com/Yggdroot/indentLine.git
 [submodule "dotvim/bundle/ultisnips"]
 	path = dotvim/bundle/ultisnips
 	url = https://github.com/SirVer/ultisnips.git
 [submodule "dotvim/vim-snippets"]
 	path = dotvim/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
-[submodule "dotvim/bundle/expand-region"]
-	path = dotvim/bundle/expand-region
-	url = https://github.com/terryma/vim-expand-region
 [submodule "dotvim/bundle/gundo"]
 	path = dotvim/bundle/gundo
 	url = http://github.com/sjl/gundo.vim.git
@@ -73,9 +61,6 @@
 [submodule "dotvim/bundle/surround"]
 	path = dotvim/bundle/surround
 	url = https://github.com/tpope/vim-surround.git
-[submodule "dotvim/bundle/hackathon-Embeditor"]
-	path = dotvim/bundle/hackathon-Embeditor
-	url = https://github.com/bangroot/hackathon-Embeditor.git
 [submodule "dotvim/bundle/nerdcommenter"]
 	path = dotvim/bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
@@ -85,3 +70,21 @@
 [submodule "dotvim/bundle/syntastic"]
 	path = dotvim/bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
+[submodule "dotvim/bundle/vim-compile"]
+	path = dotvim/bundle/vim-compile
+	url = https://github.com/dbeniamine/vim-compile.git
+[submodule "dotvim/bundle/vim-eunuch"]
+	path = dotvim/bundle/vim-eunuch
+	url = https://github.com/tpope/vim-eunuch.git
+[submodule "dotvim/bundle/vim-sensible"]
+	path = dotvim/bundle/vim-sensible
+	url = https://github.com/tpope/vim-sensible
+[submodule "dotvim/bundle/Align"]
+	path = dotvim/bundle/Align
+	url = https://github.com/vim-scripts/Align
+[submodule "dotvim/bundle/AutoAlign"]
+	path = dotvim/bundle/AutoAlign
+	url = https://github.com/vim-scripts/AutoAlign
+[submodule "dotvim/bundle/vim-indent-guides"]
+	path = dotvim/bundle/vim-indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides
