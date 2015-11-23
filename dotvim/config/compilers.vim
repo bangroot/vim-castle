@@ -3,9 +3,9 @@ function! s:SetupGradleCompiler()
 		if !empty(glob("gradlew"))
 			:compiler gradlew
 			let g:VimCompileCustomBuilder='gradlew'
-			let g:VimCompileCustomBuilderCompile='./gradlew build'
-			let g:VimCompileCustomBuilderExec='./gradlew run'
-			let g:VimCompileCustomBuilderClean='./gradlew clean'
+			let g:VimCompileCustomBuilderCompile='./gradlew --daemon test'
+			let g:VimCompileCustomBuilderExec='./gradlew --daemon build'
+			let g:VimCompileCustomBuilderClean='./gradlew --daemon clean'
 		endif
 	endif
 endfunction

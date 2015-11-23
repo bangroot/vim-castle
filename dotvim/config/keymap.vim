@@ -62,10 +62,12 @@ nnoremap <F5> :Dispatch<cr>
 "Clean
 nnoremap <F7> :call vimcompile#Compile(1,0,0,0,1)<CR>
 "Exec
-nnoremap <F8> :call vimcompile#Compile(0,0,0,1,0)<CR><CR>
+nnoremap <F9> :call vimcompile#Compile(0,0,0,1,0)<CR><CR>
 "Compile
-nnoremap <F9> :call vimcompile#Compile(1,0,0,0,0)<CR>
-nnoremap <F10> :SyntasticCheck<cr> :call vimcompile#Compile(1,0,0,0,0)<CR>
+nnoremap <F8> :call vimcompile#Compile(1,0,0,0,0)<CR>
+nnoremap <F10> :SyntasticCheck<cr> :call vimcompile#Compile(0,0,0,1,0)<CR>
+nnoremap <F12> :SyntasticCheck<cr>
+
 
 
 " YankRing

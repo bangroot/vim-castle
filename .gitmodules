@@ -88,3 +88,6 @@
 [submodule "dotvim/bundle/vim-indent-guides"]
 	path = dotvim/bundle/vim-indent-guides
 	url = https://github.com/nathanaelkane/vim-indent-guides
+[submodule "dotvim/bundle/vim-javacomplete2"]
+	path = dotvim/bundle/vim-javacomplete2
+	url = https://github.com/artur-shaik/vim-javacomplete2
