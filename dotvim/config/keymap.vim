@@ -43,8 +43,6 @@ nnoremap <silent> <Leader>gc :Gcommit<cr>
 nnoremap <silent> <Leader>gp :Gpush<cr>
 nnoremap <silent> <C-k> :Gpush<cr>
 nnoremap <silent> <C-t> :Gpull<cr>
-nnoremap <silent> <Leader>GC :Git svn dcommit<cr>
-nnoremap <silent> <Leader>GR :Git svn rebase<cr>:CommandTFlush<cr>
 nnoremap <silent> <Leader>amend :Git commit --amend<cr>
 nnoremap <silent> <Leader>stash :Git stash<cr>
 nnoremap <silent> <Leader>pop :Git stash pop<cr>
@@ -59,16 +57,21 @@ nnoremap <silent> <Leader>u :GundoToggle<cr>
 
 "Dispatch
 nnoremap <F5> :Dispatch<cr>
+
 "Clean
 nnoremap <F7> :call vimcompile#Compile(1,0,0,0,1)<CR>
 "Exec
-nnoremap <F9> :call vimcompile#Compile(0,0,0,1,0)<CR><CR>
+nnoremap <F9> :call vimcompile#Compile(0,0,0,1,0)<CR>
+nnoremap <C-F9> :exec "Dispatch ".expand(g:BangRootRunnerCmd)<CR>
+nnoremap <C-S-F9> :exec "Dispatch ".expand(g:BangRootDebuggerCmd)<CR>
+
 "Compile
 nnoremap <F8> :call vimcompile#Compile(1,0,0,0,0)<CR>
 nnoremap <F10> :SyntasticCheck<cr> :call vimcompile#Compile(0,0,0,1,0)<CR>
 nnoremap <F12> :SyntasticCheck<cr>
 
-
+"vebugger
+let g:vebugger_leader='<C-d>'
 
 " YankRing
 nnoremap <silent> <Leader>yr :YRShow<cr>

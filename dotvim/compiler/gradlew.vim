@@ -20,4 +20,8 @@ CompilerSet errorformat=
 		\%c,
     \%-GBUILD\ SUCCESSFUL,
     \%+GBUILD\ FAILED,
-    \%-GTotal\ \time:\ %.%#
+    \%-GTotal\ \time:\ %.%#,
+		\%E%.%#>%.%#FAILED,
+		\%Z%.%#(%f:%l),
+		\%C%m,
+		\%-G%.%\\+

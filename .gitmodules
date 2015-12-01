@@ -91,3 +91,12 @@
 [submodule "dotvim/bundle/vim-javacomplete2"]
 	path = dotvim/bundle/vim-javacomplete2
 	url = https://github.com/artur-shaik/vim-javacomplete2
+[submodule "dotvim/bundle/vimproc"]
+	path = dotvim/bundle/vimproc
+	url = https://github.com/Shougo/vimproc.vim.git
+[submodule "dotvim/bundle/vim-vebugger"]
+	path = dotvim/bundle/vim-vebugger
+	url = https://github.com/idanarye/vim-vebugger.git
+[submodule "dotvim/bundle/dash"]
+	path = dotvim/bundle/dash
+	url = https://github.com/rizzatti/dash.vim.git
