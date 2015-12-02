@@ -24,13 +24,13 @@ vmap v <Plug>(expand_region_expand)
 vmap <C-v> <Plug>(expand_region_shrink)
 
 "Open structure view
-map <leader>s :TlistToggle<cr>
-let tlist_groovy_settings = 'groovy;p:package;c:class;i:interface;f:function;l:closures;v:variables'
+nmap <Leader>s :TagbarToggle<CR>
 inoremap <C-Space> <C-X><C-U>
 nnoremap [[ <<
 nnoremap ]] >>
 vnoremap [[ <gv
 vnoremap ]] >gv
+nmap <C-B> g]
 
 nnoremap <F3> :set hlsearch!<cr>
 
@@ -73,9 +73,6 @@ nnoremap <F12> :SyntasticCheck<cr>
 "vebugger
 let g:vebugger_leader='<C-d>'
 
-" YankRing
-nnoremap <silent> <Leader>yr :YRShow<cr>
-
 " Windows 
 nnoremap <silent> <C-h> :wincmd h<CR>
 nnoremap <silent> <C-j> :wincmd j<CR>
@@ -99,12 +96,6 @@ nnoremap <leader>d "_d
 nnoremap <leader>c "_c
 vnoremap <leader>d "_d
 vnoremap <leader>p "_dP
-
-"Find replace
-vnoremap <silent> s //e<C-r>=&selection=='exclusive'?'+1':''<CR><CR>
-    \:<C-u>call histdel('search',-1)<Bar>let @/=histget('search',-1)<CR>gv
-omap s :normal vs<CR>nnoremap <F6> :set spell!<cr>
-
 
 nnoremap <Leader><F2> :set list!<cr>
 "nnoremap <F8> :set wrap!<cr>

@@ -1,3 +1,15 @@
+let g:tagbar_type_groovy = {
+		\ 'ctagstype' : 'groovy',
+		\ 'kinds'     : [
+				\ 'i:interfaces:0:1',
+				\ 'c:classes:0:1',
+				\ 't:traits:0:1',
+				\ 'e:enum types:0:1',
+				\ 'p:properties:0:0',
+				\ 'f:fields:0:0',
+				\ 'm:methods:0:1'
+		\ ]
+\ }
 "if !exists(":JavaImport")
 "  command -buffer JavaImport :call eclim#java#import#Import()
 "endif

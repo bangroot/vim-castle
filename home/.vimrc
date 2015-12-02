@@ -70,6 +70,7 @@ source ~/.vim/config/tlist.vim
 source ~/.vim/config/easymotion.vim
 source ~/.vim/config/surround.vim
 source ~/.vim/config/syntastic.vim
+source ~/.vim/config/easytags.vim
 
 set nocursorcolumn
 set nocursorline
