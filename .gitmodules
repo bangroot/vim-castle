@@ -94,9 +94,6 @@
 [submodule "dotvim/bundle/vimproc"]
 	path = dotvim/bundle/vimproc
 	url = https://github.com/Shougo/vimproc.vim.git
-[submodule "dotvim/bundle/vim-vebugger"]
-	path = dotvim/bundle/vim-vebugger
-	url = https://github.com/idanarye/vim-vebugger.git
 [submodule "dotvim/bundle/dash"]
 	path = dotvim/bundle/dash
 	url = https://github.com/rizzatti/dash.vim.git
@@ -109,3 +106,12 @@
 [submodule "dotvim/bundle/vim-misc"]
 	path = dotvim/bundle/vim-misc
 	url = https://github.com/xolox/vim-misc.git
+[submodule "dotvim/bundle/vim-multiple-cursors"]
+	path = dotvim/bundle/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors.git
+[submodule "dotvim/bundle/rainbow_parentheses.vim"]
+	path = dotvim/bundle/rainbow_parentheses.vim
+	url = https://github.com/kien/rainbow_parentheses.vim.git
+[submodule "dotvim/bundle/emmet-vim"]
+	path = dotvim/bundle/emmet-vim
+	url = https://github.com/mattn/emmet-vim.git

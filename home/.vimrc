@@ -71,6 +71,7 @@ source ~/.vim/config/easymotion.vim
 source ~/.vim/config/surround.vim
 source ~/.vim/config/syntastic.vim
 source ~/.vim/config/easytags.vim
+source ~/.vim/config/rainbow.vim
 
 set nocursorcolumn
 set nocursorline
