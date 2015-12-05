@@ -1,14 +1,35 @@
+" Keymapping based on IntelliJ key maps where it makes sense
+" Organized by the same structure as the keymap PDF from JetBrains here:
+" https://www.jetbrains.com/idea/docs/IntelliJIDEA_ReferenceCard.pdf
+" VIM specific mappings are under the General/VIM section
+
 let mapleader = "\<Space>"
 let g:mapleader = "\<Space>"
-nnoremap <silent> <C-F5> :so ~/.vim/config/keymap.vim<cr>
 
-nmap <Leader><Leader> V
+"Editing
+"Code completion
+inoremap <C-Space> <C-x><C-o>
+vmap v <Plug>(expand_region_expand)
+vmap <C-v> <Plug>(expand_region_shrink)
 
-"File searching
-nnoremap <silent> <Leader>o :CtrlP<cr>
-nnoremap <silent> <Leader>e :CtrlPMRU<cr>
-nnoremap <silent> <Leader>b :CtrlPBuffer<cr>
+"Search/Replace
 nnoremap <silent> <Leader>a :Ag! 
+
+
+"Usage Search
+
+
+"Compile/Run
+
+
+"Debugging
+
+
+"Navigation
+nnoremap <silent> <Leader>o :CtrlP<cr>
+"Recent files
+nnoremap <silent> <C-e> :CtrlPMRU<cr>
+nnoremap <silent> <Leader>b :CtrlPBuffer<cr>
 nnoremap <silent> <Leader>w :w<CR>
 nnoremap <Leader>q :bp <BAR> bd #<CR>
 nnoremap <Leader>r :%s/
@@ -19,21 +40,35 @@ nmap s <Plug>(easymotion-s2)
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 
-"Selection
-vmap v <Plug>(expand_region_expand)
-vmap <C-v> <Plug>(expand_region_shrink)
+"Go to declaration/jump to tag
+nmap <C-B> g]
 
+"Refactoring
+
+
+"VCS
+
+
+"Live Templates
+
+
+"General/VIM
+nnoremap <silent> <C-F5> :so ~/.vim/config/keymap.vim<cr>
+nmap <Leader><Leader> V
+
+
+""""""TO ORG
 "Open structure view
-nmap <Leader>s :TagbarToggle<CR>
+nmap <Leader>s :TagbarOpen<CR>
 inoremap <C-Space> <C-X><C-U>
 nnoremap [[ <<
 nnoremap ]] >>
 vnoremap [[ <gv
 vnoremap ]] >gv
-nmap <C-B> g]
 
 nnoremap <F3> :set hlsearch!<cr>
 
+map Q gq}
 " git
 nnoremap <silent> <Leader>gd :Gdiff<cr>
 nnoremap <silent> <Leader>gl :Glog<cr>

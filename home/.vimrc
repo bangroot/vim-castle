@@ -33,7 +33,6 @@ set number
 let g:dispatch_compilers = {
   \ 'gradle test': 'gradle',
 	\ './gradlew classes': 'gradlew'}
-map Q gq}
 let g:yankring_history_file='.yankring_history'
 let g:notes_directories = ['~/Google\ Drive/notes']
 set listchars=tab:▸\ ,eol:¬
@@ -72,6 +71,8 @@ source ~/.vim/config/surround.vim
 source ~/.vim/config/syntastic.vim
 source ~/.vim/config/easytags.vim
 source ~/.vim/config/rainbow.vim
+source ~/.vim/config/vebugger.vim
+source ~/.vim/config/tagbar.vim
 
 set nocursorcolumn
 set nocursorline
@@ -110,13 +111,5 @@ augroup BWCCreateDir
     autocmd!
     autocmd BufWritePre * :call s:MkNonExDir(expand('<afile>'), +expand('<abuf>'))
 augroup END
-
-function! g:NERDTreeFocusFind()
-	if (exists("b:NERDTreeType"))
-		NERDTreeFocusToggle
-	else
-		NERDTreeFind
-	endif
-endfunction
 
 "autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "")

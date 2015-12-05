@@ -1,11 +1,10 @@
 let g:tagbar_type_groovy = {
 		\ 'ctagstype' : 'groovy',
 		\ 'kinds'     : [
+				\ 'p:packages:0:0',
 				\ 'i:interfaces:0:1',
-				\ 'c:classes:0:1',
+				\ 'c:class:0:1',
 				\ 't:traits:0:1',
-				\ 'e:enum types:0:1',
-				\ 'p:properties:0:0',
 				\ 'f:fields:0:0',
 				\ 'm:methods:0:1'
 		\ ]
