@@ -3,11 +3,12 @@ function! s:SetupGradleCompiler()
 		if !empty(glob("gradlew"))
 			:compiler ./gradlew
 			let g:VimCompileCustomBuilder='gradlew'
-			let g:VimCompileCustomBuilderCompile='./gradlew --daemon -i test'
-			let g:VimCompileCustomBuilderExec='./gradlew --daemon build'
+			let g:VimCompileCustomBuilderCompile='./gradlew --daemon build'
+			let g:VimCompileCustomBuilderExec='./gradlew --daemon run'
 			let g:VimCompileCustomBuilderClean='./gradlew --daemon clean'
-			let g:BangRootRunnerCmd='./gradlew --daemon run'
-			let g:BangRootDebuggerCmd='./gradlew --daemon debug'
+			let g:DispatchRunnerCmd='./gradlew --daemon run'
+			let g:DispatchDebuggerCmd='./gradlew --daemon debug'
+			let g:DebuggerOptions={}
 			nnoremap <silent> <Leader>G :Dispatch ./gradlew --daemon 
 		endif
 	endif

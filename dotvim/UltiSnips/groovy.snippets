@@ -1,4 +1,43 @@
-snippet each
-$1.each { $2 ->
+snippet each "collection each closure" bm
+$1.each { ${2:it} ->
 	$0
 }
+endsnippet
+
+snippet collect "collection collect closure" bm
+$1.collect { ${2:it} ->
+	$0
+}
+endsnippet
+
+snippet if "if block" b
+if ($1) {
+	${VISUAL}$0
+}
+endsnippet
+
+snippet try "simple try/catch block" b
+try {
+	${VISUAL}
+} catch ($1) {
+	$0
+}
+endsnippet
+
+snippet tryf "try/finally block" b
+try {
+	${VISUAL}$0
+} finally {
+	$1
+}
+endsnippet
+
+snippet trycf "full try/catch/finally block" b
+try {
+	${VISUAL}$0
+} catch ($1) {
+	$2
+} finally {
+	$3
+}
+endsnippet

@@ -8,6 +8,7 @@ let g:VimCompileDoNotMap=1
 " Pathogen {{{
 filetype off
 exec pathogen#infect('bundle/{}', 'bundle.local/{}')
+Helptags
 "}}}
 
 

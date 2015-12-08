@@ -1,14 +1,21 @@
 let g:tagbar_type_groovy = {
 		\ 'ctagstype' : 'groovy',
 		\ 'kinds'     : [
-				\ 'p:packages:0:0',
-				\ 'i:interfaces:0:1',
-				\ 'c:class:0:1',
-				\ 't:traits:0:1',
-				\ 'f:fields:0:0',
-				\ 'm:methods:0:1'
-		\ ]
+				\ 'p:package:1:0',
+				\ 'i:interface',
+				\ 'c:class',
+				\ 'f:field:0:0',
+				\ 'm:method'
+		\ ],
+		\ 'sro': '.',
+		\ 'kind2scope': {
+				\ 'f': 'class',
+				\ 'm': 'class',
+				\ 'c': 'class',
+				\ 'i': 'class'
+		\ }
 \ }
+
 "if !exists(":JavaImport")
 "  command -buffer JavaImport :call eclim#java#import#Import()
 "endif

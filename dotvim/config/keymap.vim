@@ -6,70 +6,97 @@
 let mapleader = "\<Space>"
 let g:mapleader = "\<Space>"
 
+"""""""""""""""""""""""""""""""""""""""""""""
 "Editing
+"""""""""""""""""""""""""""""""""""""""""""""
+
 "Code completion
 inoremap <C-Space> <C-x><C-o>
-vmap v <Plug>(expand_region_expand)
-vmap <C-v> <Plug>(expand_region_shrink)
+"inoremap <C-Space> <C-X><C-U>
+map <C-/> <Plug>NERDCommenterToggle
+"Block comment ... doesn't work, need to look into key codes
+map <C-S-/> <plug>NERDCommenterMinimal
+map	<C-I> mzgg=G`z<CR>
+nnoremap [[ <<
+nnoremap ]] >>
+vnoremap [[ <gv
+vnoremap ]] >gv
+nnoremap <C-F4> :bp <BAR> bd #<CR>
 
+"""""""""""""""""""""""""""""""""""""""""""""
 "Search/Replace
+"""""""""""""""""""""""""""""""""""""""""""""
+
 nnoremap <silent> <Leader>a :Ag! 
-
-
-"Usage Search
-
-
-"Compile/Run
-
-
-"Debugging
-
-
-"Navigation
-nnoremap <silent> <Leader>o :CtrlP<cr>
-"Recent files
-nnoremap <silent> <C-e> :CtrlPMRU<cr>
-nnoremap <silent> <Leader>b :CtrlPBuffer<cr>
-nnoremap <silent> <Leader>w :w<CR>
-nnoremap <Leader>q :bp <BAR> bd #<CR>
 nnoremap <Leader>r :%s/
-
 map  ?? <Plug>(easymotion-sn)
 omap ?? <Plug>(easymotion-tn)
 nmap s <Plug>(easymotion-s2)
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 
-"Go to declaration/jump to tag
+"""""""""""""""""""""""""""""""""""""""""""""
+"Usage Search
+"""""""""""""""""""""""""""""""""""""""""""""
+
+nnoremap <C-F7> :set hlsearch!<cr>
+
+"""""""""""""""""""""""""""""""""""""""""""""
+"Compile/Run
+"""""""""""""""""""""""""""""""""""""""""""""
+
+"update syntax
+nmap <C-S-F9> :SyntasticCheck<cr>
+"compile
+nmap <C-F9> <C-S-F9> :call vimcompile#Compile(1,0,0,0,0)<CR>
+"clean compile
+nmap <C-F9><C-F9> :call vimcompile#Compile(1,0,0,0,1)<CR> <F9>
+
+"dispatch
+nnoremap <F5> :Dispatch<cr>
+
+"exec
+nnoremap <S-F10> :call vimcompile#Compile(0,0,0,1,0)<CR>
+nnoremap <S-F9> :exec "Dispatch ".expand(g:DispatchDebuggerCmd)<CR> 
+nmap <S-F9><S-F9> :call vebugger#jdb#start(g:DebuggerOptions)<CR> :VBGtoggleTerminalBuffer<CR> :VBGcontinue<CR>
+"nnoremap <C-F9> :exec "Dispatch ".expand(g:DispatchRunnerCmd)<CR>
+"nnoremap <C-S-F9> :exec "Dispatch ".expand(g:DispatchDebuggerCmd)<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""
+"Debugging
+"""""""""""""""""""""""""""""""""""""""""""""
+
+"vebugger
+let g:vebugger_leader='<C-d>'
+map <F8> :VBGstepOver<CR>
+map <F7> :VBGstepIn<CR>
+map <S-F8> :VBGstepOut<CR>
+map <F9> :VBGcontinue<CR>
+map <C-F8> :VBGtoggleBreakpointThisLine<CR>
+map <C-F8><C-F8> :VBGeval
+vmap <C-F8><C-F8> :VBGevalSelectedText
+
+"""""""""""""""""""""""""""""""""""""""""""""
+"Navigation
+"""""""""""""""""""""""""""""""""""""""""""""
+
+nnoremap <silent> <Leader>o :CtrlP<cr>
+"recent files
+nnoremap <silent> <C-e> :CtrlPMRU<cr>
+"open buffers
+nnoremap <silent> <Leader>b :CtrlPBuffer<cr>
+nnoremap <silent> <Leader>w :w<CR>
+"go to declaration/jump to tag
 nmap <C-B> g]
+nmap <C-F12> :TagbarOpen<CR>
 
+"""""""""""""""""""""""""""""""""""""""""""""
 "Refactoring
+"""""""""""""""""""""""""""""""""""""""""""""
 
-
+"""""""""""""""""""""""""""""""""""""""""""""
 "VCS
-
-
-"Live Templates
-
-
-"General/VIM
-nnoremap <silent> <C-F5> :so ~/.vim/config/keymap.vim<cr>
-nmap <Leader><Leader> V
-
-
-""""""TO ORG
-"Open structure view
-nmap <Leader>s :TagbarOpen<CR>
-inoremap <C-Space> <C-X><C-U>
-nnoremap [[ <<
-nnoremap ]] >>
-vnoremap [[ <gv
-vnoremap ]] >gv
-
-nnoremap <F3> :set hlsearch!<cr>
-
-map Q gq}
-" git
+"""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <silent> <Leader>gd :Gdiff<cr>
 nnoremap <silent> <Leader>gl :Glog<cr>
 nnoremap <silent> <Leader>gs :Gstatus<cr><C-w>20+
@@ -81,32 +108,25 @@ nnoremap <silent> <C-t> :Gpull<cr>
 nnoremap <silent> <Leader>amend :Git commit --amend<cr>
 nnoremap <silent> <Leader>stash :Git stash<cr>
 nnoremap <silent> <Leader>pop :Git stash pop<cr>
-nnoremap <Leader>gD <c-w>h<c-w>c
-
-" java
-nnoremap <silent> <Leader>j6 :call SetJDK('1.6')<cr>
-nnoremap <silent> <Leader>j7 :call SetJDK('1.7')<cr>
-nnoremap <silent> <Leader>j8 :call SetJDK('1.8')<cr>
-
 nnoremap <silent> <Leader>u :GundoToggle<cr>
 
-"Dispatch
-nnoremap <F5> :Dispatch<cr>
+"""""""""""""""""""""""""""""""""""""""""""""
+"Live Templates
+"""""""""""""""""""""""""""""""""""""""""""""
 
-"Clean
-nnoremap <F7> :call vimcompile#Compile(1,0,0,0,1)<CR>
-"Exec
-nnoremap <F9> :call vimcompile#Compile(0,0,0,1,0)<CR>
-nnoremap <C-F9> :exec "Dispatch ".expand(g:BangRootRunnerCmd)<CR>
-nnoremap <C-S-F9> :exec "Dispatch ".expand(g:BangRootDebuggerCmd)<CR>
+let g:UltiSnipsJumpForwardTrigger="<C-j>"
+let g:UltiSnipsJumpBackwardTrigger="<C-k>"
+let g:UltiSnipsExpandTrigger="<C-j>"
+let g:UltiSnipsListSnippets="<F2>"
 
-"Compile
-nnoremap <F8> :call vimcompile#Compile(1,0,0,0,0)<CR>
-nnoremap <F10> :SyntasticCheck<cr> :call vimcompile#Compile(0,0,0,1,0)<CR>
-nnoremap <F12> :SyntasticCheck<cr>
+"""""""""""""""""""""""""""""""""""""""""""""
+"General/VIM
+"""""""""""""""""""""""""""""""""""""""""""""
+nnoremap ¡ :NERDTreeToggle<cr>
+nnoremap <tab><tab> :call g:NERDTreeFocusFind()<cr>
 
-"vebugger
-let g:vebugger_leader='<C-d>'
+nnoremap <silent> <C-F5> :so ~/.vim/config/keymap.vim<cr>
+nmap <Leader><Leader> V
 
 " Windows 
 nnoremap <silent> <C-h> :wincmd h<CR>
@@ -133,19 +153,9 @@ vnoremap <leader>d "_d
 vnoremap <leader>p "_dP
 
 nnoremap <Leader><F2> :set list!<cr>
-"nnoremap <F8> :set wrap!<cr>
-
-" NERDTree
-nnoremap \\ :NERDTreeToggle<cr>
-nnoremap <leader>\\ :NERDTreeFind<cr>
-nnoremap <tab><tab> :call g:NERDTreeFocusFind()<cr>
-
-"NERDCommenter
-map <Leader>/ <Plug>NERDCommenterToggle
 
 nnoremap <Leader><Right> :bnext<cr>
 nnoremap <Leader><Left> :bprev<cr>
 nnoremap <Leader>l :bnext<cr>
 nnoremap <Leader>h :bprev<cr>
 
-map <leader>f mzgg=G`z<CR>
