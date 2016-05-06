@@ -6,6 +6,11 @@ let g:loaded_syntastic_groovy_groovy_checker = 1
 let s:save_cpo = &cpo
 set cpo&vim
 
+function! SyntaxCheckers_groovy_groovy_IsAvailable() dict
+		echo 'groovy: ' . executable(self.getExec())
+    return executable(self.getExec())
+endfunction
+
 function! SyntaxCheckers_groovy_groovy_GetLocList() dict
 	let makeprg = self.makeprgBuild({
 				\ 'exe': [self.getExec()],

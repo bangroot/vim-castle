@@ -1,9 +1,6 @@
 [submodule "dotvim/bundle/obsession"]
 	path = dotvim/bundle/obsession
 	url = https://github.com/tpope/vim-obsession.git
-[submodule "dotvim/bundle/airline"]
-	path = dotvim/bundle/airline
-	url = https://github.com/bling/vim-airline
 [submodule "dotvim/bundle/dispatch"]
 	path = dotvim/bundle/dispatch
 	url = https://github.com/tpope/vim-dispatch
@@ -22,27 +19,15 @@
 [submodule "dotvim/bundle/xoloxmisc"]
 	path = dotvim/bundle/xoloxmisc
 	url = https://github.com/xolox/vim-misc.git
-[submodule "dotvim/bundle/notes"]
-	path = dotvim/bundle/notes
-	url = https://github.com/xolox/vim-notes.git
 [submodule "dotvim/bundle/fugitive"]
 	path = dotvim/bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "dotvim/bundle/colorschemes"]
-	path = dotvim/bundle/colorschemes
-	url = https://github.com/flazz/vim-colorschemes.git
 [submodule "dotvim/bundle/rooter"]
 	path = dotvim/bundle/rooter
 	url = https://github.com/airblade/vim-rooter.git
-[submodule "dotvim/bundle/ctrlp"]
-	path = dotvim/bundle/ctrlp
-	url = https://github.com/kien/ctrlp.vim
 [submodule "dotvim/bundle/nerdtree"]
 	path = dotvim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree
-[submodule "dotvim/bundle/delimitmate"]
-	path = dotvim/bundle/delimitmate
-	url = https://github.com/Raimondi/delimitMate.git
 [submodule "dotvim/bundle/ultisnips"]
 	path = dotvim/bundle/ultisnips
 	url = https://github.com/SirVer/ultisnips.git
@@ -52,9 +37,6 @@
 [submodule "dotvim/bundle/gundo"]
 	path = dotvim/bundle/gundo
 	url = http://github.com/sjl/gundo.vim.git
-[submodule "dotvim/bundle/vimcompletesme"]
-	path = dotvim/bundle/vimcompletesme
-	url = https://github.com/ajh17/VimCompletesMe.git
 [submodule "dotvim/bundle/easymotion"]
 	path = dotvim/bundle/easymotion
 	url = https://github.com/Lokaltog/vim-easymotion
@@ -88,18 +70,9 @@
 [submodule "dotvim/bundle/vim-indent-guides"]
 	path = dotvim/bundle/vim-indent-guides
 	url = https://github.com/nathanaelkane/vim-indent-guides
-[submodule "dotvim/bundle/vim-javacomplete2"]
-	path = dotvim/bundle/vim-javacomplete2
-	url = https://github.com/artur-shaik/vim-javacomplete2
 [submodule "dotvim/bundle/vimproc"]
 	path = dotvim/bundle/vimproc
 	url = https://github.com/Shougo/vimproc.vim.git
-[submodule "dotvim/bundle/dash"]
-	path = dotvim/bundle/dash
-	url = https://github.com/rizzatti/dash.vim.git
-[submodule "dotvim/bundle/tagbar"]
-	path = dotvim/bundle/tagbar
-	url = https://github.com/majutsushi/tagbar.git
 [submodule "dotvim/bundle/vim-easytags"]
 	path = dotvim/bundle/vim-easytags
 	url = https://github.com/xolox/vim-easytags.git
@@ -117,4 +90,46 @@
 	url = https://github.com/mattn/emmet-vim.git
 [submodule "dotvim/bundle/vim-vebugger"]
 	path = dotvim/bundle/vim-vebugger
-	url = https://github.com/idanarye/vim-vebugger.git
+	url = https://github.com/bleshik/vim-vebugger.git
+[submodule "dotvim/bundle/local-vimrc"]
+	path = dotvim/bundle/local-vimrc
+	url = https://github.com/MarcWeber/vim-addon-local-vimrc.git
+[submodule "dotvim/bundle/vim-less"]
+	path = dotvim/bundle/vim-less
+	url = https://github.com/groenewege/vim-less.git
+[submodule "dotvim/bundle/javascript-libraries-syntax.vim"]
+	path = dotvim/bundle/javascript-libraries-syntax.vim
+	url = https://github.com/othree/javascript-libraries-syntax.vim.git
+[submodule "dotvim/bundle/auto-pairs"]
+	path = dotvim/bundle/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs.git
+[submodule "dotvim/bundle/vim-gitgutter"]
+	path = dotvim/bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "dotvim/bundle/vim-polyglot"]
+	path = dotvim/bundle/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot
+[submodule "dotvim/bundle/vim-airline"]
+	path = dotvim/bundle/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "dotvim/bundle/grails-vim"]
+	path = dotvim/bundle/grails-vim
+	url = https://github.com/vim-scripts/grails-vim.git
+[submodule "dotvim/bundle/VimCompletesMe"]
+	path = dotvim/bundle/VimCompletesMe
+	url = https://github.com/ajh17/VimCompletesMe.git
+[submodule "dotvim/bundle/hardmode"]
+	path = dotvim/bundle/hardmode
+	url = https://github.com/wikitopian/hardmode.git
+[submodule "dotvim/bundle/vim-devicons"]
+	path = dotvim/bundle/vim-devicons
+	url = https://github.com/ryanoasis/vim-devicons
+[submodule "dotvim/bundle/ctrlp.vim"]
+	path = dotvim/bundle/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
+[submodule "dotvim/bundle/matchit.zip"]
+	path = dotvim/bundle/matchit.zip
+	url = https://github.com/vim-scripts/matchit.zip.git
+[submodule "dotvim/bundle/vim-move"]
+	path = dotvim/bundle/vim-move
+	url = https://github.com/matze/vim-move.git

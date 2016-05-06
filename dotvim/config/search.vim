@@ -4,4 +4,4 @@ set incsearch
 set ignorecase
 set smartcase
 
-let g:agprg="ag --nocolor --nogroup --column --smart-case"
+let g:ag_prg="ag --nocolor --nogroup --column --smart-case"

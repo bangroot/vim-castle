@@ -14,6 +14,7 @@ function! s:SetupGradleCompiler()
 	endif
 endfunction
 
+let g:DebuggerOptions={}
 
 au BufRead * :call s:SetupGradleCompiler()
 

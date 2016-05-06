@@ -6,11 +6,15 @@ let g:loaded_syntastic_groovy_codenarc_checker = 1
 let s:save_cpo = &cpo
 set cpo&vim
 
+function! SyntaxCheckers_groovy_codenarc_IsAvailable() dict
+    return 1
+endfunction
+
 function! SyntaxCheckers_groovy_codenarc_GetLocList() dict
 	let makeprg = self.makeprgBuild({
 				\ 'exe': [self.getExec()],
 				\ 'fname': '',
-				\ 'args': '-report=console' })
+				\ 'args': expand('%')})
 	let errorformat =
 				\ '%+P%.%#File: %f,'.
 				\ '%E%.%#Violation%.%#P=1%.%#Line=%l%.%#Msg=[%m,'.

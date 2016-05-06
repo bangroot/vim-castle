@@ -5,13 +5,26 @@
 
 let mapleader = "\<Space>"
 let g:mapleader = "\<Space>"
-
+let g:GrailsMapPrefix="\<Space>v"
 """""""""""""""""""""""""""""""""""""""""""""
 "Editing
 """""""""""""""""""""""""""""""""""""""""""""
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop> 
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop> 
+vnoremap <up> <nop>
+vnoremap <down> <nop>
+vnoremap <left> <nop>
+vnoremap <right> <nop> 
 
 "Code completion
 inoremap <C-Space> <C-x><C-o>
+inoremap <C-\> <Plug>emmet-expand-abbr
 "inoremap <C-Space> <C-X><C-U>
 map <C-/> <Plug>NERDCommenterToggle
 "Block comment ... doesn't work, need to look into key codes
@@ -22,6 +35,7 @@ nnoremap ]] >>
 vnoremap [[ <gv
 vnoremap ]] >gv
 nnoremap <C-F4> :bp <BAR> bd #<CR>
+nnoremap <C-x> :bp <BAR> bd #<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""
 "Search/Replace
@@ -103,8 +117,8 @@ nnoremap <silent> <Leader>gs :Gstatus<cr><C-w>20+
 nnoremap <silent> <Leader>gb :Gblame<cr>
 nnoremap <silent> <Leader>gc :Gcommit<cr>
 nnoremap <silent> <Leader>gp :Gpush<cr>
-nnoremap <silent> <C-k> :Gpush<cr>
-nnoremap <silent> <C-t> :Gpull<cr>
+"nnoremap <silent> <C-k> :Gpush<cr>
+"nnoremap <silent> <C-t> :Gpull<cr>
 nnoremap <silent> <Leader>amend :Git commit --amend<cr>
 nnoremap <silent> <Leader>stash :Git stash<cr>
 nnoremap <silent> <Leader>pop :Git stash pop<cr>
@@ -129,10 +143,10 @@ nnoremap <silent> <C-F5> :so ~/.vim/config/keymap.vim<cr>
 nmap <Leader><Leader> V
 
 " Windows 
-nnoremap <silent> <C-h> :wincmd h<CR>
-nnoremap <silent> <C-j> :wincmd j<CR>
-nnoremap <silent> <C-k> :wincmd k<CR>
-nnoremap <silent> <C-l> :wincmd l<CR>
+nnoremap <silent> <C-S-h> :wincmd h<CR>
+nnoremap <silent> <C-S-j> :wincmd j<CR>
+nnoremap <silent> <C-S-k> :wincmd k<CR>
+nnoremap <silent> <C-S-l> :wincmd l<CR>
 nnoremap <silent> <Leader>Q :cclose<CR>
 
 "System copy paste
