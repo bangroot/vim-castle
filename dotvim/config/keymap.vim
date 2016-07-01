@@ -9,18 +9,23 @@ let g:GrailsMapPrefix="\<Space>v"
 """""""""""""""""""""""""""""""""""""""""""""
 "Editing
 """""""""""""""""""""""""""""""""""""""""""""
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop> 
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop> 
-vnoremap <up> <nop>
-vnoremap <down> <nop>
-vnoremap <left> <nop>
-vnoremap <right> <nop> 
+"nnoremap <up> <nop>
+"nnoremap <down> <nop>
+"nnoremap <left> <nop>
+"nnoremap <right> <nop> 
+"inoremap <up> <nop>
+"inoremap <down> <nop>
+"inoremap <left> <nop>
+"inoremap <right> <nop> 
+"vnoremap <up> <nop>
+"vnoremap <down> <nop>
+"vnoremap <left> <nop>
+"vnoremap <right> <nop> 
+
+vmap <C-k> <Plug>MoveBlockUp
+vmap <C-j> <Plug>MoveBlockDown
+nmap <C-j> <Plug>MoveLineDown
+nmap <C-k> <Plug>MoveLineUp
 
 "Code completion
 inoremap <C-Space> <C-x><C-o>
@@ -96,13 +101,15 @@ vmap <C-F8><C-F8> :VBGevalSelectedText
 
 nnoremap <silent> <Leader>o :CtrlP<cr>
 "recent files
-nnoremap <silent> <C-e> :CtrlPMRU<cr>
+nnoremap <silent> <Leader>e :CtrlPMRU<cr>
 "open buffers
 nnoremap <silent> <Leader>b :CtrlPBuffer<cr>
 nnoremap <silent> <Leader>w :w<CR>
+nnoremap <silent> <Leader>- :split<CR>
+nnoremap <silent> <Leader>\ :vsplit<CR>
+
 "go to declaration/jump to tag
-nmap <C-B> g]
-nmap <C-F12> :TagbarOpen<CR>
+"nmap <C-F12> :TagbarOpen<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""
 "Refactoring
@@ -128,10 +135,10 @@ nnoremap <silent> <Leader>u :GundoToggle<cr>
 "Live Templates
 """""""""""""""""""""""""""""""""""""""""""""
 
-let g:UltiSnipsJumpForwardTrigger="<C-j>"
-let g:UltiSnipsJumpBackwardTrigger="<C-k>"
+"let g:UltiSnipsJumpForwardTrigger="<C-j>"
+"let g:UltiSnipsJumpBackwardTrigger="<C-k>"
 let g:UltiSnipsExpandTrigger="<C-j>"
-let g:UltiSnipsListSnippets="<F2>"
+let g:UltiSnipsListSnippets="<C-TAB>"
 
 """""""""""""""""""""""""""""""""""""""""""""
 "General/VIM

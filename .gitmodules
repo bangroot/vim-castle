@@ -133,3 +133,9 @@
 [submodule "dotvim/bundle/vim-move"]
 	path = dotvim/bundle/vim-move
 	url = https://github.com/matze/vim-move.git
+[submodule "dotvim/bundle/bufonly"]
+	path = dotvim/bundle/bufonly
+	url = https://github.com/vim-scripts/BufOnly.vim.git
+[submodule "dotvim/bundle/groovy"]
+	path = dotvim/bundle/groovy
+	url = https://github.com/endSly/groovy.vim.git

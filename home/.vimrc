@@ -46,6 +46,7 @@ let g:dispatch_compilers = {
 set listchars=tab:▸\ ,eol:¬,trail:˾
 set list
 au CursorHold,CursorHoldI,WinEnter,BufWinEnter * checktime
+set diffopt+=iwhite
 " }}}
 
 " Colors {{{

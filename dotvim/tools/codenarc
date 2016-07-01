@@ -1,0 +1,10 @@
+#!/usr/bin/env groovy
+@Grapes(
+@Grab('org.codenarc:CodeNarc:0.25.2')
+)
+@GrabExclude('org.codehaus.groovy:groovy-xml')
+import org.codenarc.CodeNarc
+
+org.codenarc.CodeNarc.main([
+ "-includes=**/${args[0]}", "-report=console"
+] as String[])

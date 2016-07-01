@@ -15,7 +15,7 @@ let g:tagbar_type_groovy = {
 				\ 'i': 'class'
 		\ }
 \ }
-set foldmethod=indent
+"set foldmethod=indent
 "if !exists(":JavaImport")
 "  command -buffer JavaImport :call eclim#java#import#Import()
 "endif
