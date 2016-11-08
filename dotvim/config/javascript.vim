@@ -8,3 +8,5 @@ let g:javascript_conceal_prototype      = "¶"
 let g:javascript_conceal_static         = "•"
 let g:javascript_conceal_super          = "Ω"
 let g:javascript_conceal_arrow_function = "⇒"
+let g:javascript_conceal = 1
+let g:polyglot_disabled = ['javascript' ]

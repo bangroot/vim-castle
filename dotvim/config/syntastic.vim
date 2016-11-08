@@ -9,7 +9,7 @@ let g:syntastic_auto_jump = 1
 
 let g:syntastic_mode_map = {
         \ "mode": "passive",
-				\ "active_filetypes": ["javascript", "html"] }
+				\ "active_filetypes": ["javascript"] }
 
 "let g:syntastic_debug = 63
 let g:syntastic_java_checkers = []

@@ -13,6 +13,7 @@ Helptags
 
 set t_ut=
 "set guicolors
+let g:gruvbox_contrast_dark="hard"
 set background=dark
 let g:gruvbox_italic=1
 colorscheme gruvbox
@@ -70,6 +71,7 @@ source ~/.vim/config/nerdtree.vim
 source ~/.vim/config/java.vim
 source ~/.vim/config/javascript.vim
 source ~/.vim/config/gist.vim
+source ~/.vim/config/git.vim
 "source ~/.vim/config/neocomplete.vim
 source ~/.vim/config/vimcompletesme.vim
 "source ~/.vim/config/eclim.vim

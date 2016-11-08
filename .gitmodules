@@ -34,9 +34,6 @@
 [submodule "dotvim/vim-snippets"]
 	path = dotvim/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
-[submodule "dotvim/bundle/gundo"]
-	path = dotvim/bundle/gundo
-	url = http://github.com/sjl/gundo.vim.git
 [submodule "dotvim/bundle/easymotion"]
 	path = dotvim/bundle/easymotion
 	url = https://github.com/Lokaltog/vim-easymotion
@@ -82,9 +79,6 @@
 [submodule "dotvim/bundle/vim-multiple-cursors"]
 	path = dotvim/bundle/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors.git
-[submodule "dotvim/bundle/rainbow_parentheses.vim"]
-	path = dotvim/bundle/rainbow_parentheses.vim
-	url = https://github.com/kien/rainbow_parentheses.vim.git
 [submodule "dotvim/bundle/emmet-vim"]
 	path = dotvim/bundle/emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
@@ -127,9 +121,6 @@
 [submodule "dotvim/bundle/ctrlp.vim"]
 	path = dotvim/bundle/ctrlp.vim
 	url = https://github.com/ctrlpvim/ctrlp.vim.git
-[submodule "dotvim/bundle/matchit.zip"]
-	path = dotvim/bundle/matchit.zip
-	url = https://github.com/vim-scripts/matchit.zip.git
 [submodule "dotvim/bundle/vim-move"]
 	path = dotvim/bundle/vim-move
 	url = https://github.com/matze/vim-move.git
@@ -139,3 +130,21 @@
 [submodule "dotvim/bundle/groovy"]
 	path = dotvim/bundle/groovy
 	url = https://github.com/endSly/groovy.vim.git
+[submodule "dotvim/bundle/nerdtree-git-plugin"]
+	path = dotvim/bundle/nerdtree-git-plugin
+	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
+[submodule "dotvim/bundle/cosco.vim"]
+	path = dotvim/bundle/cosco.vim
+	url = https://github.com/lfilho/cosco.vim.git
+[submodule "dotvim/bundle/vim-fubitive"]
+	path = dotvim/bundle/vim-fubitive
+	url = https://github.com/tommcdo/vim-fubitive
+[submodule "dotvim/bundle/vim-javascript"]
+	path = dotvim/bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule "dotvim/bundle/vim-jsx"]
+	path = dotvim/bundle/vim-jsx
+	url = https://github.com/mxw/vim-jsx.git
+[submodule "dotvim/bundle/rainbow"]
+	path = dotvim/bundle/rainbow
+	url = https://github.com/luochen1990/rainbow.git

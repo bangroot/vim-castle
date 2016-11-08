@@ -30,6 +30,8 @@ nmap <C-k> <Plug>MoveLineUp
 "Code completion
 inoremap <C-Space> <C-x><C-o>
 inoremap <C-\> <Plug>emmet-expand-abbr
+nnoremap <silent> <C-F12> :call cosco#commaOrSemiColon()<CR>
+inoremap <silent> <C-F12> <c-o>:call cosco#commaOrSemiColon()<CR>
 "inoremap <C-Space> <C-X><C-U>
 map <C-/> <Plug>NERDCommenterToggle
 "Block comment ... doesn't work, need to look into key codes
@@ -135,10 +137,10 @@ nnoremap <silent> <Leader>u :GundoToggle<cr>
 "Live Templates
 """""""""""""""""""""""""""""""""""""""""""""
 
-"let g:UltiSnipsJumpForwardTrigger="<C-j>"
-"let g:UltiSnipsJumpBackwardTrigger="<C-k>"
-let g:UltiSnipsExpandTrigger="<C-j>"
-let g:UltiSnipsListSnippets="<C-TAB>"
+let g:UltiSnipsJumpForwardTrigger="<C-j>"
+let g:UltiSnipsJumpBackwardTrigger="<C-k>"
+let g:UltiSnipsExpandTrigger="<C-o>"
+let g:UltiSnipsListSnippets="<C-p>"
 
 """""""""""""""""""""""""""""""""""""""""""""
 "General/VIM
