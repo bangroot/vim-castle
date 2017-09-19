@@ -58,6 +58,7 @@ syntax enable
 "hi LongLines term=standout ctermfg=red cterm=underline
 "hi MatchParen ctermbg=63
 " }}}
+source ~/.vim/config/functions.vim
 source ~/.vim/config/mac_keys.vim
 source ~/.vim/config/keymap.vim
 source ~/.vim/config/devicons.vim
@@ -95,6 +96,7 @@ set backupdir=~/.backup//
 set undodir=~/.backup//
 
 set autoindent
+set smartindent
 filetype plugin indent on
 set shiftwidth=2
 set tabstop=2

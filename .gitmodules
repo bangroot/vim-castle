@@ -148,3 +148,6 @@
 [submodule "dotvim/bundle/rainbow"]
 	path = dotvim/bundle/rainbow
 	url = https://github.com/luochen1990/rainbow.git
+[submodule "dotvim/bundle/vim-tmux-navigator"]
+	path = dotvim/bundle/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator.git
