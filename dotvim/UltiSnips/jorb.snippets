@@ -1,0 +1,24 @@
+snippet jd "JORB Domain" b
+import { DomainObject } from 'jorb'
+
+const resource = '$2'
+
+class $1 extends DomainObject {
+	constructor() {
+		super(resource, {
+			typeMap: {
+			},
+			ignoreOnSave: []
+		})
+		$0
+	}
+
+	static resources() {
+		return resource
+	}
+}
+
+export default $1
+
+endsnippet
+
