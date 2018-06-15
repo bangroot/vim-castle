@@ -70,9 +70,6 @@
 [submodule "dotvim/bundle/vimproc"]
 	path = dotvim/bundle/vimproc
 	url = https://github.com/Shougo/vimproc.vim.git
-[submodule "dotvim/bundle/vim-easytags"]
-	path = dotvim/bundle/vim-easytags
-	url = https://github.com/xolox/vim-easytags.git
 [submodule "dotvim/bundle/vim-misc"]
 	path = dotvim/bundle/vim-misc
 	url = https://github.com/xolox/vim-misc.git
@@ -139,12 +136,6 @@
 [submodule "dotvim/bundle/vim-fubitive"]
 	path = dotvim/bundle/vim-fubitive
 	url = https://github.com/tommcdo/vim-fubitive
-[submodule "dotvim/bundle/vim-javascript"]
-	path = dotvim/bundle/vim-javascript
-	url = https://github.com/pangloss/vim-javascript.git
-[submodule "dotvim/bundle/vim-jsx"]
-	path = dotvim/bundle/vim-jsx
-	url = https://github.com/mxw/vim-jsx.git
 [submodule "dotvim/bundle/rainbow"]
 	path = dotvim/bundle/rainbow
 	url = https://github.com/luochen1990/rainbow.git

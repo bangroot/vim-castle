@@ -41,7 +41,6 @@ nnoremap [[ <<
 nnoremap ]] >>
 vnoremap [[ <gv
 vnoremap ]] >gv
-nnoremap <C-F4> :bp <BAR> bd #<CR>
 nnoremap <C-x> :bp <BAR> bd #<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""
